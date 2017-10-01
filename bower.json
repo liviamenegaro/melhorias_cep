@@ -1,0 +1,22 @@
+{
+  "name": "dbo-2017-harp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Lívia Menegaro"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.10"
+  }
+}

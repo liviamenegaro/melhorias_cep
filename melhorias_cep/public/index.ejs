@@ -1,0 +1,57 @@
+
+<form class="form-inline">
+    <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" 
+            autofocus class="form-control" 
+            id="cep" name="cep" maxlength="8">
+    </div>
+    <button class="btn btn-default" type="submit">
+        <span class="glyphicon glyphicon-search"></span>
+    </button>
+    <button class="btn btn-default" type="submit" id="exclui">
+        <span class="glyphicon glyphicon-remove"></span>
+    </button>
+</form>
+
+<div class="mostrar">
+    <div id="resultado">
+    
+    </div>
+    <div class="alert alert-danger" role="alert" style="display: none">
+        CEP não encontrado! Mude algumas coisas e tente novamente.
+    </div>
+</div>
+
+<script id="template" type="text/x-handlebars-template">
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>CEP</td>
+                <td>{{cep}}</td>
+            </tr>
+            <tr>
+                <td>Logradouro</td>
+                <td>{{logradouro}}</td>
+            </tr>
+            <tr>
+                <td>Complemento</td>
+                <td>{{complemento}}</td>
+            </tr>
+            <tr>
+                <td>Bairro</td>
+                <td>{{bairro}}</td>
+            </tr>
+            <tr>
+                <td>Localidade</td>
+                <td>{{localidade}}</td>
+            </tr>
+            <tr>
+                <td>UF</td>
+                <td>{{uf}}</td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script src="js/index.js"></script>
